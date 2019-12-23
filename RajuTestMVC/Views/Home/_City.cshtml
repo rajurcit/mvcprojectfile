@@ -1,0 +1,12 @@
+﻿@model RajuTestMVC.Models.MstDistrict
+
+@{
+    Layout = null;
+}
+<div class="form-group col-md-6">
+    @Html.LabelFor(model => model.MstDistricts, htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-md-10">
+        @Html.DropDownListFor(model => model.MstDistricts, (IEnumerable<SelectListItem>)ViewBag.Citylist, "Select City", new { @class = "form-control col-md-3", @id = "ddrcity" })
+        @Html.ValidationMessageFor(model => model.MstDistricts, "", new { @class = "text-danger" })
+    </div>
+</div>

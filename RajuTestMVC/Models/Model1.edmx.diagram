@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5cbc10e3fc2047cabba0e7a6dd1f11db" Name="Diagram1">
+        <EntityTypeShape EntityType="AgriDBModel.MstApplication" Width="1.5" PointX="0.75" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstCropPop" Width="1.5" PointX="3" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstCropPopsTextDetail" Width="1.5" PointX="5.25" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstCrop" Width="1.5" PointX="3" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstCropsTextDetail" Width="1.5" PointX="8.25" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstCropType" Width="1.5" PointX="3" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstCropTypesTextDetail" Width="1.5" PointX="5.25" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstDistrict" Width="1.5" PointX="8.25" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstDistrictsTextDetail" Width="1.5" PointX="10.5" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstLanguage" Width="1.5" PointX="3" PointY="38.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstMenu" Width="1.5" PointX="3" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstNewCatTextDetail" Width="1.5" PointX="5.25" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstNewsCategory" Width="1.5" PointX="8.25" PointY="47.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstNewsImage" Width="1.5" PointX="12.75" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstPincode" Width="1.5" PointX="13.5" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstState" Width="1.5" PointX="3" PointY="48" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstStatesTextDetail" Width="1.5" PointX="5.25" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.MstUserRole" Width="1.5" PointX="3" PointY="52.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblAnimal" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblAnimalCare" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblCropPopDescription" Width="1.5" PointX="8.25" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblCropPopDescriptionTextDetail" Width="1.5" PointX="10.5" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblDistrictCrop" Width="1.5" PointX="8.25" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblNewsDetail" Width="1.5" PointX="10.5" PointY="44.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblNewsTextDetail" Width="1.5" PointX="12.75" PointY="48.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblPopCropTypesMapping" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblPopDescription" Width="1.5" PointX="6" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblRoleMenu" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblUserApplication" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblUserMapping" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.UserDetail" Width="1.5" PointX="0.75" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.BreedDesc" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblBreed" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblBreedDesc" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.tblCareDescN" Width="1.5" PointX="6.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.vw_CropPOPDescriptionDetails" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.vw_CropPOPMapping" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AgriDBModel.vw_MenuDetails" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <AssociationConnector Association="AgriDBModel.FK_MstMenu_MstApplications" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropPops_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropPops_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropPopsTextDetails_MstCropPops" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_MstCropPops" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropPopsTextDetails_MstLanguage" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropPopsTextDetails_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropPopsTextDetails_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCrops_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCrops_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropsTextDetails_MstCrops" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_MstCrops" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblDistrictCrops_MstCrops" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropsTextDetails_MstLanguage" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropsTextDetails_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropsTextDetails_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropTypes_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropTypes_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropTypesTextDetails_MstCropTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_MstCropTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblDistrictCrops_MstCropTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropTypesTextDetails_MstLanguage" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropTypesTextDetails_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstCropTypesTextDetails_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.fk_DistrictID" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistricts_MstStates" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistricts_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistricts_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistrictsTextDetails_MstDistricts" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstPincodes_MstDistricts" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_MstDistricts" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblDistrictCrops_MstDistricts" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistrictsTextDetails_MstLanguage" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistrictsTextDetails_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstDistrictsTextDetails_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstLanguage_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstLanguage_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.fk_MstNewCatTextDetails_LangID" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.fk_MstStatesTextDetails_LangID" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescriptionTextDetails_MstLanguage" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstMenu_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstMenu_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.fk_CategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK__MstNewsIm__NewsI__57A801BA" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstPincodes_MstStates" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstPincodes_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstPincodes_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstStates_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstStates_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstStatesTextDetails_MstStates" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.fk_StateID" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_MstStates" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstStatesTextDetails_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstStatesTextDetails_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstUserRoles_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_MstUserRoles_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_tblPopDescriptions" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescription_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescriptionTextDetails_tblCropPopDescription" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescriptionTextDetails_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblCropPopDescriptionTextDetails_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblDistrictCrops_UserDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.FK_tblDistrictCrops_UserDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="AgriDBModel.foreign_NewsID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

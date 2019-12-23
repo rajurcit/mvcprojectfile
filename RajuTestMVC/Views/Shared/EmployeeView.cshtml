@@ -1,0 +1,60 @@
+﻿@model RajuTestMVC.Models.MstState
+
+@{
+    Layout = null;
+}
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+@*<div class="row col-md-6">
+        <div class="form-group col-md-12">
+            @Html.LabelFor(model => model.StateName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.StateName, (IEnumerable<SelectListItem>)ViewBag.State, "Select State", new { @class = "form-control col-md-3", @id = "ddlStates", onchange = "return GetCities()" })
+            </div>
+        </div>
+
+    <div id="partialCityView" class="col-md-12">
+    </div>
+    </div>*@
+
+<script type="text/javascript">
+    function GetCities() {
+        var state = document.getElementById("ddlStates").value;
+        if (state == 0) {
+            return false;
+        }
+        $.ajax({
+            url: '@Url.Action("GetCities", "Home")',
+            dataType: "html",
+            data: { "stateId": state },
+            type: "GET",
+            contentType: "application/json",
+            success: function (response) {
+                $('#partialCityView').html(response);
+            },
+            error: function (err) {
+                alert(err.responseText);
+            }
+        });
+    }
+</script>
