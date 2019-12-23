@@ -1,0 +1,70 @@
+﻿@model List<WebApplication1.Models.country>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="Name">
+            </div>
+            <div class="form-group">
+                <label for="usr">Email:</label>
+                <input type="text" class="form-control" id="Email">
+            </div>
+            <div class="form-group">
+                <label for="ddlCountry">Country:</label>
+                @Html.DropDownList("ddlCountry", (IEnumerable<SelectListItem>)ViewBag.GetCountry, htmlAttributes: new { required = "", @class = "col-md-2 form-control" })
+            </div>
+            <div id="partialDiv">
+            </div>
+            <div class="form-group">
+                <button id="btnSave" onclick="btnSave">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#btnSave").click(function () {
+            var Name = $('#Name').val();
+            var Email = $('#Email').val();
+
+            var ddlCountry = $('#ddlCountry option:selected').text();
+            var ddlCity = $('#ddlCity option:selected').text();
+
+            alert(ddlCountry);
+
+            $.ajax({
+                url: '@Url.Action("SaveData", "Home")',
+                data: { 'Name': name, 'Email': Email, 'ddlCountry': ddlCountry, 'ddlCity': ddlCity },
+                type: "POST",
+                success: function (response) {
+                    $.each(response, function (i, response) {
+                        $("#ddlSubProcess").append('<option value="'
+                            + response.Value + '">'
+                            + response.Text + '</option>');
+                    });
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+
+                }
+            });
+
+
+        });
+
+        $("#ddlCountry").on("change", function () {
+
+            var url = '@Url.Action("GetState", "Home")' + "?CountryID="  + $(this).val();
+
+            $("#partialDiv").load(url, function(){
+                $('#partialDiv').fadeIn('fast');
+    })
+        });
+    });
+</script>  

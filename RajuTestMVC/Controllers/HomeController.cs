@@ -79,6 +79,7 @@ namespace RajuTestMVC.Controllers
             }
             //foreach (City city in cities)
             //{
+
             //    cityList.Add(new SelectListItem
             //    {
             //        Text = city.CityName,
@@ -88,6 +89,46 @@ namespace RajuTestMVC.Controllers
             //}
             ViewBag.City = cityList;
             return View("GetCities");
+        }
+
+        public PartialViewResult PartialView1()
+        {
+            // ViewBag.Message = "Contry list";
+
+            var countryData = db.countries.ToList();
+            List<SelectListItem> liContry = new List<SelectListItem>();
+            liContry.Add(new SelectListItem { Text = "--Select Country--", Value = "0" });
+            foreach (var x in countryData)
+            {
+                liContry.Add(new SelectListItem
+                {
+                    Text = x.countryName,
+                    Value = x.countryID.ToString()
+                });
+            }
+            ViewBag.GetCountry = liContry;
+            return PartialView();
+        }
+
+        public PartialViewResult GetState(string CountryID)
+        {
+            var states = db.cities.Where(x => x.countryID == CountryID).ToList();
+
+            // SelectList stList = new SelectList(states, "stateID", "stateName", "countryID");
+            List<SelectListItem> liState = new List<SelectListItem>();
+            liState.Add(new SelectListItem { Text = "--Select City--", Value = "0" });
+            foreach (var x in states)
+            {
+                liState.Add(new SelectListItem
+                {
+                    Text = x.cityName,
+                    Value = x.cityID.ToString()
+                });
+            }
+
+            ViewBag.stList = liState;
+            // pass the model to the view in the second parameter
+            return PartialView("DisplayState");
         }
     }
 }
